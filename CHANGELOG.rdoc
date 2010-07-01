@@ -1,4 +1,11 @@
-= KingTour Changelog
+= KingSlideTabs Changelog
+
+2010.07.01
+* renamed to kingSlideTabs
+* allow multiple tabs without conflicts
+* removed image bg handling for tab .. must be set in css
+* optimized some methods
+
 
 2010.07.01
 * initial import from http://tab-slide-out.googlecode.com/svn/trunk/jquery.tabSlideOut.v2.0.js
