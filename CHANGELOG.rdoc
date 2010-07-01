@@ -1,0 +1,4 @@
+= KingTour Changelog
+
+2010.07.01
+* initial import from http://tab-slide-out.googlecode.com/svn/trunk/jquery.tabSlideOut.v2.0.js

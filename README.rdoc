@@ -1,0 +1,43 @@
+= KingSlideTabs - Let your content slide in
+
+Place one of those funky side-tabs on your page and have your content slide in from the browsers edges.
+
+Can serve as:
+
+* Info pane
+* Help
+* Contact form
+* just about anything you can put in a div
+
+
+== Usage
+
+See example here: http://salesking.github.com/king_slide_tabs/
+
+Look into the source and use firebug to get a grasp of it .. as long as the docs are sparse :-)
+
+=== Example
+
+A slide in tab can be any div. It must contain an handle element(f.ex a.handle) which is visible to the user and when clicked the whole tab slides out 
+
+  <div id="infoTab">
+    <h3>Info</h3>
+    <p>hello tab content</p>
+    <a class="handle" href="#">TabHandle(txt invisible)</a>
+  </div>
+
+Javascript
+
+   $('#infoTab').kingSlideTab({
+                tabHandle: '.handle'
+                //.. more options see js
+        });
+
+== Size
+
+
+
+== Credits
+
+This repo started with a clone of http://code.google.com/p/tab-slide-out/ from wpaoli http://wpaoli.building58.com/
+During it's implementation at SalesKing it got some enhancements.
