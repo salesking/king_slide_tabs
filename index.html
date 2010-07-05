@@ -2,39 +2,43 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/style.css" /> 
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+    <script type="text/javascript" src="http://github.com/salesking/king_slide_tabs/raw/master/king_slide_tabs.js"></script> 
+    <title>Slide Tabs - Slide in your content</title>
+    
+    <script type="text/javascript">
+      $(document).ready(function() {
+        
+        $('.tab').removeClass('hidden');
 
-	<title>salesking/king_slide_tabs @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #3d5014;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #ffffff;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #c2afeb; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #c2afeb; }
-    h3 { text-align: center; color: #c2afeb; }
-    a { color: #c2afeb; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
-</head>
+        $('#helpTab').kingSlideTabs({
+            tabHandle: '.handle',
+            tabLocation: 'right', 
+            topPos: '180px',
+            fixedPosition: true
+        });
+        
+        $('#importTab').kingSlideTabs({
+            tabHandle: '.handle',
+            tabLocation: 'left', 
+            topPos: '180px',
+            fixedPosition: true
+        });
+        
+      });
+
+
+
+    </script>
+
+  </head>
 
 <body>
-  <a href="http://github.com/salesking/king_slide_tabs"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
+  <a href="http://github.com/salesking/king_slide_tabs">
+  <img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
   <div id="container">
 
@@ -45,21 +49,19 @@
         <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
     </div>
 
-    <h1><a href="http://github.com/salesking/king_slide_tabs">king_slide_tabs</a>
-      <span class="small">by <a href="http://github.com/salesking">salesking</a></span></h1>
+    <h1><a href="http://github.com/salesking/king_slide_tabs">Sliding Tabs</a>
+      <span class="small">by <a href="http://github.com/salesking">SalesKing</a></span></h1>
 
     <div class="description">
       Slide in tabs from the browsers edges containing help, feedback forms, .. whatever you throw at it
     </div>
 
     <h2>Dependencies</h2>
-<p>jQuery</p>
-<h2>License</h2>
-<p>MIT</p>
-<h2>Authors</h2>
-<p>Georg Leciejewski (gl@salesking.eu)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>SalesKing (gl@salesking.eu)<br/>      </p>
+    <p>jQuery</p>
+    <h2>License</h2>
+    <p>MIT</p>
+    <h2>Contact</h2>
+    <p>SalesKing (gl@salesking.eu)    <br/>      </p>
 
 
     <h2>Download</h2>
@@ -79,6 +81,23 @@
 
   </div>
 
-  
+<!-- tab definition, hidden -->
+<div class='tab hidden' id='helpTab'>
+  <h3>Created by</h3>  
+  <p>
+  Georg Leciejewski</p>
+  <a class='handle' href="#">Help me</a>
+</div>  
+
+<div class='tab hidden' id='importTab'>
+  <h3>Download</h3>
+  <a href="http://github.com/salesking/king_slide_tabs/zipball/master">
+  <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+  <a href="http://github.com/salesking/king_slide_tabs/tarball/master">
+  <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
+
+  <a class='handle' href="#">Download</a>
+</div>  
+
 </body>
 </html>
