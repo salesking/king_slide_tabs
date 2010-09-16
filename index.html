@@ -12,12 +12,31 @@
     <script type="text/javascript">
       $(document).ready(function() {
         
-        $('.tab').removeClass('hidden');
+        $('.tab').removeClass('hidden'); // prevent flickering when loaded
 
+        $('#topTab').kingSlideTabs({
+            tabHandle: '.handle',
+            tabLocation: 'top', 
+            leftPos: '250px',
+            topPos: '0px'
+        });
+        $('#bottomTab').kingSlideTabs({
+            tabHandle: '.handle',
+            tabLocation: 'bottom', 
+            leftPos: '40%',
+            topPos: '0px'
+        });
         $('#helpTab').kingSlideTabs({
             tabHandle: '.handle',
             tabLocation: 'right', 
             topPos: '180px',
+            fixedPosition: true
+        });
+        
+        $('#toolTab').kingSlideTabs({
+            tabHandle: '.handle',
+            tabLocation: 'right', 
+            topPos: '350px',
             fixedPosition: true
         });
         
@@ -82,11 +101,34 @@
   </div>
 
 <!-- tab definition, hidden -->
+<div class='tab hidden' id='topTab'>
+  <h3>SlideTabs</h3>  
+  <p>A tab can also be placed on top</p>
+  <a class='handle' href="#">Top Info</a>
+</div>  
+
+<div class='tab hidden' id='bottomTab'>
+  <p><a href="http://www.freakyphone.de/index.php?cPath=78&osCsid=d9db560e409fd25f2a1ca3b51abb5fcd" title="Freakyphones Website">
+  <img src="http://www.freakyphone.de/images/flokati_punk_1.jpg" border="0" alt="Flokati Punk" title=" Flokati Punk " width="450" height="450"></a>
+  <p>more on <a href="http://www.freakyphones.de/">freakyphones.de</a> </p>
+  
+  <a class='handle' href="#">Freakyphones</a>
+</div>  
+
 <div class='tab hidden' id='helpTab'>
   <h3>Created by</h3>  
   <p>
   Georg Leciejewski</p>
   <a class='handle' href="#">Help me</a>
+</div>
+
+<div class='tab hidden' id='toolTab'>
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="180" height="600">
+    <param name="movie" value="freaky_banner.swf">
+    <param name="quality" value="high">
+    <embed src="freaky_banner.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="180" height="600">
+  </object>
+  <a class='handle' href="#">Build your own freakyhone</a>
 </div>  
 
 <div class='tab hidden' id='importTab'>

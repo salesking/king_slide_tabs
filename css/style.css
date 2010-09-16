@@ -16,10 +16,18 @@
     .box li {width: 120px; height: 120px; border: 2px solid #ccc; margin: 10px; float:left; list-style:none; padding: 20px}
   
   
-#importTab, #helpTab { padding: 0 4px 4px 4px; width: 250px; background: #ccc; border: 1px solid #505050; font-size: 1.2em; }
-#helpTab a.handle{ background-image:url(img/help_tab.png); width:25px; height: 25px; }
-#importTab a.handle{ background-image:url(img/import_tab.png); width:25px; height: 25px; }
-#importTab ul, #helpTab ul { padding: 0 4px 0 22px;}
+.tab { padding: 0 5px 5px 5px; width: 250px; background: #ccc; border: 1px solid #505050; font-size: 1.2em; }
+.tab a.handle{  width:25px; height: 25px; }
+.tab ul { padding: 0 4px 0 22px;}
+.tab h3 { text-align: left; }
+
+#importTab a.handle, #topTab a.handle{ background-image:url(img/import_tab.png); }
+#helpTab a.handle{ background-image:url(img/help_tab.png); }
+#toolTab a.handle{ background-image:url(img/tool.png);  width:60px; height: 60px; }
+#toolTab.tab{  width: 180px; padding:0;}
+
+#bottomTab a.handle{ background-image:url(img/freakyphones_logo.png);  width:75px; height: 76px; }
+#bottomTab { width: 450px;}
   
 .hidden{display:none;}  
   
